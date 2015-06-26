@@ -36,6 +36,11 @@
 		
 	}
 
+	function dbDelete($table_name, $column, $value){
+	    $sql = "DELETE FROM ".$table_name." WHERE ".$column."='".$value."';";
+	    return dbQuery($sql);
+	}
+
 	function dbQuery($sql){
 		$result = mysqli_query($conn, $sql);
 	    mysqli_close($conn);
