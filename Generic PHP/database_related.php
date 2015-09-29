@@ -42,6 +42,7 @@
 	}
 
 	function dbQuery($sql){
+		global $conn;
 		$result = mysqli_query($conn, $sql);
 	    mysqli_close($conn);
 	    return $result;

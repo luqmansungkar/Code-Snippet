@@ -1,0 +1,6 @@
+<FilesMatch "getToken.php">
+AuthUserFile /home/.htpasswd
+AuthType Basic
+AuthName "Kitabisa Dashboard"
+require valid-user
+</FilesMatch>
